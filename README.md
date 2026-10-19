@@ -16,7 +16,6 @@ A hands-on lab that builds a VPC with a public and a private subnet, a bastion h
 - [Errors encountered and fixes](#errors-encountered-and-fixes)
 - [Verification checklist](#verification-checklist)
 - [Clean-up](#clean-up)
-- [Next steps](#next-steps)
 
 ## What you will build
 
@@ -323,12 +322,6 @@ To avoid unexpected charges, delete resources in this order:
 5. Optionally delete the `bastion-kp` key pair from EC2 and remove the local `.pem` file.
 
 A VPC, subnets, route tables and an Internet Gateway are free, but NAT gateways and public IPv4 addresses are billed.
-
-## Next steps
-
-- Add a **NAT Gateway** in the public subnet and route the private subnet through it, then re-run the ping test. It should now succeed outbound while the server stays unreachable inbound.
-- Add a second Availability Zone with another public/private pair for resilience.
-- Compare **security groups with NACLs** and practice using both.
 
 ## Repository layout
 
